@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page_index attr="value">
+  <localization lang="ru">
+    <description>
+      <button>
+        <header>Lorem ipsum dolor sit amet "0"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+      <button>
+        <header>Lorem ipsum dolor sit amet "1"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+      <button>
+        <header>Lorem ipsum dolor sit amet "2"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+      <button>
+        <header>Lorem ipsum dolor sit amet "default"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+    </description>
+    <description>
+      <button>
+        <header>Короткий пароль</header>
+        <text>
+          Пароль должен содержать минимум 8 знаков (максимум 64).
+        </text>
+      </button>
+      <button>
+        <header>Пароли не совпадают</header>
+        <text>
+          Повторите ввод пароля.
+        </text>
+      </button>
+      <button>
+        <header>Такой логин занят</header>
+        <text>
+          Пользователь с таким логином уже существует.
+        </text>
+      </button>
+      <button>
+        <header>Lorem ipsum dolor sit amet "2"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+      <button>
+        <header>Lorem ipsum dolor sit amet "default"</header>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </text>
+      </button>
+    </description>
+  </localization>
+</page_index>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <script src="/angular/angular-1.5.0/angular.js" charset="utf-8"></script>
+  <script src="/angular/angular-1.5.0/angular-animate.js" charset="utf-8"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/main.css" TYPE="text/css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <!-- <script defer="" type="text/javascript" src="/javascript/mainAPI.js" onload=""></script> -->
+  </head>
+  <body id="">
+    <header>
+      <div class="div_in_header margin_both_horisontal main_head_div">
+        <div class="div_in_header site_name">
+          <h1>SwapFuel (site name)</h1>
+        </div>
+        <div class="div_in_header page_name">
+          <h1>Гланая (theme name)</h1>
+        </div>
+        <div class="div_in_header navigation_part">
+          <p>навигационый блок</p>
+        </div>
+      </div>
+    </header>
+    <!-- resource/media/images/for_some_blocks/modern_architecture-wallpaper-5120x3200.jpg -->
+    <section class="default_section first_from_top">
+      <div class="margin_both_horisontal default_content_block_in_section">
+        <p><h2>Lorem ipsum dolor sit amet</h2><br>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </section>
+    <section class="default_section main_section">
+      <div class="margin_both_horisontal div_with_buttons">
+        <a href="sign_up.html">
+          <div id="ic_shopping_cart" class="button button_on_main_page" onmouseover="Description.changedescription(0)" onmouseout="Description.hidedescription()">
+
+          </div>
+        </a>
+        <a href="sign_up.html">
+          <div id="ic_store" class="button button_on_main_page"  onmouseover="Description.changedescription(1)" onmouseout="Description.hidedescription()">
+
+          </div>
+        </a>
+        <a href="sign_up.html">
+          <div id="ic_local_shipping" class="button button_on_main_page" onmouseover="Description.changedescription(2)" onmouseout="Description.hidedescription()">
+
+          </div>
+        </a>
+      </div>
+      <div id="comment_text_in_main_section" class="margin_both_horisontal comment_text_in_main_section">
+        <!-- <h3>Lorem ipsum dolor sit amet "0"</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua."</p> -->
+      </div>
+      <p></p>
+    </section>
+    <section class="default_section">
+      <div class="margin_both_horisontal default_content_block_in_section">
+        <p><h2>Lorem ipsum dolor sit amet</h2><br>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </section>
+    <section class="default_section">
+      <div class="margin_both_horisontal default_content_block_in_section">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </section>
+    <section class="default_section">
+      <div class="margin_both_horisontal default_content_block_in_section">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </section>
+    <section></section>
+    <aside class="">
+
+    </aside>
+    <footer>
+      <div class="div_in_footer margin_both_horisontal main_footer_div">
+        <div class="div_in_footer footer_logo">
+          <h1>Footer</h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!--<script type="text/javascript">
+    function loadxmlhttp(i) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          ChangeDescription(xmlhttp,i);
+        }
+      }
+      xmlhttp.open("GET", "xml/dynamic.xml", true);
+      xmlhttp.send();
+    }
+    function ChangeDescription(xmlhttp,i) {
+      var description = xmlhttp.getElementsByTagName('description');
+      console.log(description);
+      var description_header = "<h3>"+description[0].getElementsByTagName('button')[i].getElementsByTagName('header')[0].childNodes[0].nodeValue+"</h3>";
+      var description_text   = "<p>"+description[0].getElementsByTagName('button')[i].getElementsByTagName('text')[0].childNodes[0].nodeValue+"</p>";
+      document.getElementById('comment_text_in_main_section').innerHTML = description_header + description_text;
+      document.getElementById('comment_text_in_main_section').style.display = "block";
+    }
+    function HideDescription() {
+      document.getElementById('comment_text_in_main_section').style.display = "none";
+    }
+    loadxmlhttp();
+  </script> -->
+  <script type="text/javascript">
+    /*var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        ChangeDescription(xmlhttp,i);
+      }
+    xmlhttp.open("GET", "xml/dynamic.xml", true);
+    xmlhttp.send();*/
+    function DescriptionBuilder () {
+      this.xmlhttp = new XMLHttpRequest();
+      /*this.xmlhttp.onreadystatechange = function() {
+        //this.xmlhttp = new XMLHttpRequest();
+        if (this.xmlhttp.readyState == 4 && this.xmlhttp.status == 200) {
+          console.log(this.xmlhttp);
+        }
+        //console.log(this.xmlhttp);
+      }*/
+      this.xmlhttp.open("GET", "xml/dynamic.xml", true);
+      this.xmlhttp.send();
+      this.sizeY = document.getElementById('comment_text_in_main_section').offsetHeight;
+      this.changedescription = function (i) {
+        if (this.xmlhttp.readyState == 4 && this.xmlhttp.status == 200) {
+        //  console.log(this.xmlhttp);
+          var description = this.xmlhttp.responseXML.getElementsByTagName('description');
+        //  console.log(description);
+          var description_header = "<h3>"+description[0].getElementsByTagName('button')[i].getElementsByTagName('header')[0].childNodes[0].nodeValue+"</h3>";
+          var description_text   = "<p>"+description[0].getElementsByTagName('button')[i].getElementsByTagName('text')[0].childNodes[0].nodeValue+"</p>";
+          document.getElementById('comment_text_in_main_section').innerHTML = description_header + description_text;
+          document.getElementById('comment_text_in_main_section').style.display = "block";
+          /*for (i = this.sizeY; i < this.sizeY;i++) {
+            window.setTimeout(changeSize(i),100000);
+          }*/
+        }
+      }
+      this.hidedescription = function () {
+        for (var i = this.sizeY; i > 0;i--) {
+          window.setTimeout(changeSize(i),1000);
+        }
+        if (this.xmlhttp.readyState == 4 && this.xmlhttp.status == 200) {
+          var description = this.xmlhttp.responseXML.getElementsByTagName('description');
+        //  console.log(description);
+          var description_header = "<h3>"+description[0].getElementsByTagName('button')[description[0].getElementsByTagName('button').length - 1].getElementsByTagName('header')[0].childNodes[0].nodeValue+"</h3>";
+          var description_text   = "<p>"+description[0].getElementsByTagName('button')[description[0].getElementsByTagName('button').length - 1].getElementsByTagName('text')[0].childNodes[0].nodeValue+"</p>";
+          document.getElementById('comment_text_in_main_section').innerHTML = description_header + description_text;
+        }
+        document.getElementById('comment_text_in_main_section').style.display = "none";
+      }
+    }
+    function HideDescription() {
+      for (i = this.sizeY; i > 0;i--) {
+        setTimeout(changeSize(i),1000);
+      }
+      document.getElementById('comment_text_in_main_section').style.display = "none";
+    }
+    function changeSize(i) {
+      //var i = 1*2;
+      document.getElementById('comment_text_in_main_section').offsetHeight = i;
+    //  console.log(document.getElementById('comment_text_in_main_section').offsetHeight);
+    }
+    var Description = new DescriptionBuilder();
+  //  Description.xmlhttp.onreadystatechange();
+    // Description.changedescription(1);
+    Description.hidedescription();
+    //console.log(document.getElementById('comment_text_in_main_section').offsetHeight);
+  </script>
+  </html>

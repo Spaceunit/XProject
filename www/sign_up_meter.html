@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/main.css" TYPE="text/css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <!-- <script defer="" type="text/javascript" src="/javascript/mainAPI.js" onload=""></script> -->
+  </head>
+  <body id="">
+    <header>
+      <div class="div_in_header margin_both_horisontal main_head_div">
+        <div class="div_in_header site_name">
+          <h1>SwapFuel.com.ua</h1>
+        </div>
+        <div class="div_in_header page_name">
+          <h1>Регистрация</h1>
+        </div>
+        <div class="div_in_header navigation_part">
+          <p>навигационый блок</p>
+        </div>
+      </div>
+    </header>
+    <!-- resource/media/images/for_some_blocks/modern_architecture-wallpaper-5120x3200.jpg -->
+    <section class="sign_up_section">
+      <h2 id="sign_up_section_header">Соглашение</h2>
+      <div class="default_content_block_in_sign_up">
+        <p>
+          При нажатии кнопки "Регистрация" я даю согласие на использование личных данных, ресурсу SwapFuel.com.ua
+          <br>Так же я беру на себя отвецтвенность за возможные неудоволитворительные результаты сделок,
+          и последствия возникшие при неосторожном либо неправильном размещении личной информации.
+        </p>
+      </div>
+      <form>
+        <div class="sign_up_input_field_layer0">
+          <div class="sign_up_input_field_layer1"></div>
+          <input id="sign_up_login" class="sign_up_input_field_parameter" name="login" type="text" placeholder="Введите логин" maxlength="64" onfocus="CheckInputData.checkdata(this)" oninput="CheckInputData.checkdata(this)" onblur="CheckInputData.notcheckdata(this)" required>
+        </div>
+        <div class="sign_up_input_field_layer0">
+          <div class="sign_up_input_field_layer1">
+            <meter min="200" max="500" value="350">
+          </div>
+          <input id="sign_up_password" class="sign_up_input_field_parameter" name="password" type="password" placeholder="Введите пароль" maxlength="64" oninput="CheckInputData.checkdata(this)" onblur="CheckInputData.notcheckdata(this)" required>
+        </div>
+        <div class="sign_up_input_field_layer0">
+          <div class="sign_up_input_field_layer1">
+            <meter min="200" max="500" value="350">
+          </div>
+          <input id="sign_up_rpassword" class="sign_up_input_field_parameter" name="rpassword" type="password" placeholder="Повторите пароль" maxlength="64" oninput="CheckInputData.checkdata(this)" onblur="CheckInputData.notcheckdata(this)" required>
+        </div>
+        <div class="sign_up_input_field_layer0">
+          <div class="sign_up_input_field_layer1"></div>
+          <input id="sign_up_name" class="sign_up_input_field_parameter" name="name" type="text" placeholder="Введите имя" maxlength="64" onfocus="CheckInputData.checkdata(this)" oninput="CheckInputData.checkdata(this)" onblur="CheckInputData.notcheckdata(this)" required>
+        </div>
+        <div class="sign_up_input_field_layer0">
+          <div class="sign_up_input_field_layer1"></div>
+          <input id="sign_up_email" class="sign_up_input_field_parameter" name="email" type="email" placeholder="Введите e-mail" maxlength="64" onfocus="CheckInputData.checkdata(this)" oninput="CheckInputData.checkdata(this)" onblur="CheckInputData.notcheckdata(this)" required>
+        </div>
+        <div class="div_with_buttons_sign_up">
+          <div class="div_button_container"><button class="sing_up_button" type="submit" value="submit">Зарегистрироваться</button></div>
+          <div class="div_button_container"><button class="sing_up_button" type="reset" onclick="CheckInputData.clearStyle();" value="submit">Сброс</button></div>
+        </div>
+    </form>
+      <div id="comment_text_in_sign_up" class="margin_both_horisontal comment_text_in_sign_up">
+        <p><h3>Lorem ipsum dolor sit amet "0"</h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      </div>
+    </section>
+    <aside class="">
+
+    </aside>
+    <footer>
+      <div class="div_in_footer margin_both_horisontal main_footer_div">
+        <div class="div_in_footer footer_logo">
+          <h1>Footer</h1>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var max_password_length = 64;
+      var min_password_length = 8;
+      var ColorTable = {
+        inputtrue : "rgb(185, 250, 119)",
+        inputfalse : "rgb(231, 92, 92)",
+        toosmall : "rgb(228, 134, 8)",
+        inputblur : "transparent",
+        inputfocus : "#fff3e0"
+      }
+      var SymbolTable = {
+        ok: "&#9989;",
+        no: "&#10060;",
+        warning: "&#10071;"
+      }
+      function DescriptionBuilder () {
+        this.xmlhttp = new XMLHttpRequest();
+        this.xmlhttp.open("GET", "xml/dynamic.xml", true);
+        this.xmlhttp.send();
+        this.sizeY = document.getElementById('comment_text_in_sign_up').offsetHeight;
+        this.changedescription = function (i) {
+          if (this.xmlhttp.readyState == 4 && this.xmlhttp.status == 200) {
+            var description = this.xmlhttp.responseXML.getElementsByTagName('description');
+            var description_header = "<h3>"+description[1].getElementsByTagName('button')[i].getElementsByTagName('header')[0].childNodes[0].nodeValue+"</h3>";
+            var description_text   = "<p>"+description[1].getElementsByTagName('button')[i].getElementsByTagName('text')[0].childNodes[0].nodeValue+"</p>";
+            document.getElementById('comment_text_in_sign_up').innerHTML = description_header + description_text;
+            document.getElementById('comment_text_in_sign_up').style.display = "block";
+          }
+        }
+        this.hidedescription = function () {
+          for (var i = this.sizeY; i > 0;i--) {
+            window.setTimeout(changeSize(i),1000);
+          }
+          if (this.xmlhttp.readyState == 4 && this.xmlhttp.status == 200) {
+            var description = this.xmlhttp.responseXML.getElementsByTagName('description');
+          //  console.log(description);
+            var description_header = "<h3>"+description[1].getElementsByTagName('button')[description[1].getElementsByTagName('button').length - 1].getElementsByTagName('header')[0].childNodes[0].nodeValue+"</h3>";
+            var description_text   = "<p>"+description[1].getElementsByTagName('button')[description[1].getElementsByTagName('button').length - 1].getElementsByTagName('text')[0].childNodes[0].nodeValue+"</p>";
+            document.getElementById('comment_text_in_sign_up').innerHTML = description_header + description_text;
+          }
+          document.getElementById('comment_text_in_sign_up').style.display = "none";
+        }
+      }
+      function HideDescription() {
+        for (i = this.sizeY; i > 0;i--) {
+          setTimeout(changeSize(i),1000);
+        }
+        document.getElementById('comment_text_in_sign_up').style.display = "none";
+      }
+      function changeSize(i) {
+        document.getElementById('comment_text_in_sign_up').offsetHeight = i;
+      }
+      function passwordcheck(value) {
+        if (value.length < 8) {
+          Description.changedescription(0);
+          return false;
+        } else {
+          Description.hidedescription();
+          return true;
+        }
+      }
+      function CheckInputInformation () {
+        this.login = new Object();
+        this.password = new Object();
+        this.rpassword = new Object();
+        this.username = new Object();
+        this.email = new Object();
+        this.login.page_obj = document.getElementById('sign_up_login');
+        this.password.page_obj = document.getElementById('sign_up_password');
+        this.rpassword.page_obj = document.getElementById('sign_up_rpassword');
+        this.username.page_obj = document.getElementById('sign_up_name');
+        this.email.page_obj = document.getElementById('sign_up_email');
+        this.login.check = null;
+        this.password.check = null;
+        this.rpassword.check = null;
+        this.username.check = null;
+        this.email.check = null;
+        var layers = document.getElementsByClassName('sign_up_input_field_layer1');
+        this.login.symbol = layers[0];
+        this.password.symbol = layers[1];
+        this.rpassword.symbol = layers[2];
+        this.username.symbol = layers[3];
+        this.email.symbol = layers[4];
+        this.clearStyle = function () {
+          var layers = document.getElementsByClassName('sign_up_input_field_layer1');
+          for (var i = 0; i < layers.length; i++) {
+            layers[i].style.cssText = "";
+            layers[i].innerHTML = "";
+          }
+          Description.hidedescription();
+        }
+        this.checkdata = function (page_obj) {
+          page_obj.style.backgroundColor = ColorTable.inputfocus;
+          if (page_obj == this.login.page_obj) {
+
+          }
+          if (page_obj == this.password.page_obj) {
+              var color = null;
+              if (!passwordcheck(this.password.page_obj.value)) {
+                  this.password.symbol.innerHTML = "";
+                  page_obj.style.backgroundColor = ColorTable.inputblur;
+                  if (page_obj.value.length < min_password_length) {
+                    color = ColorTable.toosmall;
+                  } else {
+                    color = ColorTable.inputfalse;
+                  }
+                  this.password.symbol.style.cssText = "height: 10px; width: "+page_obj.value.length*6.4+"pt; background: "+color+";";
+                  page_obj.setAttribute("onfocus","CheckInputData.checkdata(this)");
+              } else {
+                  this.password.symbol.innerHTML = "";
+                  page_obj.style.backgroundColor = ColorTable.inputblur;
+                  this.password.symbol.style.cssText = "height: 10px; width: "+page_obj.value.length*6.4+"pt; background: rgb(23, 191, 75);";
+                  page_obj.setAttribute("onfocus","CheckInputData.checkdata()");
+              }
+          }
+          if (page_obj == this.rpassword.page_obj) {
+            if (page_obj.value !== this.password.page_obj.value || !passwordcheck(this.password.page_obj.value)) {
+                this.rpassword.symbol.innerHTML = "";
+                page_obj.style.backgroundColor = ColorTable.inputblur;
+                if (page_obj.value.length < min_password_length) {
+                  color = ColorTable.toosmall;
+                  page_obj.style.backgroundColor = "transparent";
+                } else {
+                  color = ColorTable.inputfalse;
+                }
+                this.rpassword.symbol.style.cssText = "height: 10px; width: "+page_obj.value.length*6.4+"pt; background: "+color+";";
+                page_obj.setAttribute("onfocus","CheckInputData.checkdata(this)");
+                Description.changedescription(1);
+            } else {
+                if (this.rpassword.page_obj.value.length >= min_password_length) {
+                  this.rpassword.symbol.innerHTML = "";
+                  page_obj.style.backgroundColor = ColorTable.inputblur;
+                  this.rpassword.symbol.style.cssText = "height: 10px; width: "+page_obj.value.length*6.4+"pt; background: rgb(23, 191, 75);";
+                  page_obj.setAttribute("onfocus","CheckInputData.checkdata()");
+                  Description.hidedescription();
+                }
+            }
+          }
+          if (page_obj == this.username.page_obj) {
+
+          }
+          if (page_obj == this.email.page_obj) {
+
+          }
+        }
+        this.notcheckdata = function (page_obj) {
+          page_obj.style.backgroundColor = ColorTable.inputblur;
+          if (page_obj == this.login.page_obj) {
+
+          }
+          if (page_obj == this.password.page_obj) {
+            if (!passwordcheck(this.password.page_obj.value)) {
+                //page_obj.style.backgroundColor = ColorTable.inputfalse;
+                this.password.symbol.style.cssText = "";
+                this.password.symbol.innerHTML = SymbolTable.no;
+            } else {
+                //page_obj.style.backgroundColor = ColorTable.inputtrue;
+                this.password.symbol.style.cssText = "";
+                this.password.symbol.innerHTML = SymbolTable.ok;
+            }
+          }
+          if (page_obj == this.rpassword.page_obj) {
+            if (this.rpassword.page_obj.value !== this.password.page_obj.value || !passwordcheck(this.password.page_obj.value)) {
+                this.rpassword.symbol.style.cssText = "";
+                this.rpassword.symbol.innerHTML = SymbolTable.no;
+                Description.changedescription(1);
+            } else {
+                if (page_obj.value.length >= min_password_length){
+                  this.rpassword.symbol.style.cssText = "";
+                  this.rpassword.symbol.innerHTML = SymbolTable.ok;
+                  Description.hidedescription();
+                }
+            }
+          }
+          if (page_obj == this.username.page_obj) {
+
+          }
+          if (page_obj == this.email.page_obj) {
+
+          }
+        }
+      }
+      var Description = new DescriptionBuilder();
+      Description.hidedescription();
+      var CheckInputData = new CheckInputInformation ();
+      console.log(document.getElementById("sign_up_password").offsetHeight);
+    </script>
+  </body>
+  </html>
