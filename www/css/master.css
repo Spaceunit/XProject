@@ -1,3 +1,16 @@
+/*Open Color table*/
+/*
+colors
+#0D65FF
+#0C96EB
+#00E4FF
+#0CE8C3
+#0DFF92
+*/
+/*End  Color table*/
+
+
+
 @font-face {
     font-family: Roboto-Lite;
     src: url(/fonts/RobotoTTF/Roboto-Light.ttf);
@@ -24,7 +37,7 @@ header {
   position: fixed;
   -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgb(105, 145, 236);
+  background-color: #0C96EB;
   width: 100%;
   height: 100pt;
   float: none;
@@ -47,7 +60,7 @@ aside {
   right: 0;
   height: 400pt;
   min-width: 150pt;
-  background: rgb(107, 183, 201);
+  background: #00E4FF;
   -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: 10;
