@@ -60,6 +60,38 @@ header h3 {
   padding-left: 5pt;
   padding-top: 5pt;
 }
+
+
+.navbar {
+  display: block;
+  height: 40pt;
+}
+.navbar .navbutton {
+  display: inline-block;
+  width: 60pt;
+  height: 100%;
+  margin-left: 20pt;
+  margin-top: 9pt;
+}
+.navbar .navbutton+.navbutton {
+  display: inline-block;
+  width: 60pt;
+  height: 100%;
+  margin-left: auto;
+}
+.navbar .navbutton p {
+  display: block;
+  height: 18pt;
+  color: #0D65FF;
+  text-align: center;
+  line-height: 18pt;
+}
+.navbar .navbutton .nvborder {
+  height: 2pt;
+  width: 100%;
+  background-color: #0D65FF;
+}
+
 header .logo {
   display: block;
   height: 90pt;
@@ -95,7 +127,14 @@ header .logo img {
   text-align: center;
   line-height: 499pt;
   margin: 10pt auto;
-  border: 2px dotted #0D65FF;
+  /*border: 2px dotted #0D65FF;*/
+}
+#page_welcome .mainsection .bigslide img {
+  display: block;
+  width: 700pt;
+  height: 500pt;
+  padding: 0;
+  margin: 0;
 }
 #page_welcome .mainsection .bigslide h1 {
   color: #0D65FF;
