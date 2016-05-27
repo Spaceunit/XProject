@@ -11,7 +11,7 @@ colors
 
 @font-face {
     font-family: Roboto-Lite;
-    src: url(/fonts/RobotoTTF/Roboto-Light.ttf);
+    src: url(/../fonts/RobotoTTF/Roboto-Light.ttf);
 }
 
 @font-face {
@@ -115,7 +115,7 @@ footer {
 }
 footer div[name="corsac"] {
   background-color: rgb(255, 255, 255);
-  background-image: url(/corsac.png);
+  background-image: url(/../corsac.png);
   background-size: contain;
   height: 90px;
   width: 160px;
@@ -159,15 +159,15 @@ footer h1 {
 }
 .socialnetworks div[name="facebook"] {
   background-color: #3B5998;
-  background-image: url(/facebook.png);
+  background-image: url(/../facebook.png);
 }
 .socialnetworks div[name="twitter"] {
   background-color: #e1e8ed;
-  background-image: url(/twitter.png);
+  background-image: url(/../twitter.png);
 }
 .socialnetworks div[name="googleplus"] {
   background-color: #e6e6e6;
-  background-image: url(/googleplus.png);
+  background-image: url(/../googleplus.png);
   background-position: center;
   background-size: 60pt 60pt;
 }
